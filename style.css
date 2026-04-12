@@ -152,3 +152,104 @@ button {
     background: white;
     color: black;
 }
+/* =========================
+   RESPONSIVIDADE COMPLETA
+========================= */
+
+/* TELAS GRANDES (desktop padrão) */
+@media (max-width: 1200px) {
+    .hero-img img {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .navbar {
+        padding: 20px 40px;
+    }
+}
+
+/* TABLETS */
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-img img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .cards {
+        justify-content: center;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+
+    .menu a {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .servicos {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+/* TELAS MUITO ESTREITAS (vertical tipo monitor retrato) */
+@media (max-width: 400px) {
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 60px 15px;
+    }
+}
